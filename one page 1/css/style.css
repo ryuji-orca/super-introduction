@@ -1,0 +1,129 @@
+h2,
+p,
+a {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* style.css */
+
+/* ヘッダー */
+.header {
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 8px #bdc3c7;
+}
+
+.header__inner {
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+}
+
+/* ハンバーガーメニュー */
+.hamburger {
+  display: block;
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+.hamburger__line {
+  display: block;
+  margin-bottom: 8px;
+  width: 32px;
+  height: 2px;
+  background-color: #202020;
+  border-radius: 4px;
+}
+
+/* PC用ナビ */
+.header__nav {
+  display: none;
+}
+
+/* main */
+.main__kv__inner {
+  padding: 80px 15px 0;
+}
+
+.main__kv__inner__left {
+  padding: 0;
+  max-width: 360px;
+  margin: 45px auto;
+}
+
+.main__kv__inner__left h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.main__kv__inner__left p {
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 330px;
+  margin-bottom: 30px;
+}
+
+.main__kv__inner__left__btn {
+  display: inline-block;
+  border-radius: 50px;
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+  background-color: #bf7c63;
+  padding: 16px 38px;
+  transition: all ease 0.5s;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+
+.main__kv__inner__left__btn:hover {
+  opacity: 0.7;
+}
+
+.main__kv__inner__left ul {
+  max-width: 150px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__kv__inner__left ul li {
+  max-width: 50px;
+}
+
+.main__kv__inner__left ul li a {
+  display: inline-block;
+  transition: all ease 0.5s;
+  opacity: 1;
+}
+
+.main__kv__inner__left ul li a:hover {
+  opacity: 0.7;
+}
+
+.main__kv__inner__left ul li a img {
+  width: 100%;
+}
+
+.main__kv__inner__right ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__kv__inner__right ul li {
+  max-width: 360px;
+}
+
+.main__kv__inner__right ul li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.main__kv__inner__right ul li img {
+  width: 100%;
+}
