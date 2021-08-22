@@ -1,0 +1,115 @@
+/* responsive.css */
+
+@media screen and (min-width: 769px) {
+  .header__inner {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 30px 50px;
+    min-height: 110px;
+  }
+
+  /* ハンバーガーメニュー */
+  .hamburger {
+    display: none;
+  }
+
+  /* PC用ナビ */
+  .header__nav {
+    display: block;
+  }
+
+  .header__nav ul {
+    display: flex;
+  }
+
+  .header__nav ul li:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .header__nav ul li a {
+    font-size: 18px;
+    line-height: 1;
+    opacity: 1;
+    transition: all ease 0.5s;
+  }
+
+  .header__nav ul li a:hover {
+    opacity: 0.5;
+  }
+
+  /* main */
+
+  .main__kv__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 110px 0 0;
+  }
+
+  .main__kv__inner__left {
+    margin: 60px auto 40px auto;
+    max-width: 520px;
+  }
+
+  .main__kv__inner__left h2 {
+    font-size: 46px;
+    margin-bottom: 30px;
+    line-height: 2;
+  }
+
+  .main__kv__inner__left p {
+    font-size: 24px;
+    margin-bottom: 60px;
+    max-width: 482px;
+  }
+
+  .main__kv__inner__right {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .main__kv__inner__right ul {
+    flex-direction: initial;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .main__kv__inner__right ul li {
+    width: 50%;
+  }
+
+  .main__kv__inner__right ul li:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header__inner {
+    padding: 30px 20px;
+  }
+  .main__kv__inner {
+    display: flex;
+    padding: 110px 20px 0;
+  }
+
+  .main__kv__inner__left {
+    padding-right: 20px;
+    margin: 30px auto 40px auto;
+  }
+
+  .main__kv__inner__right {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header__inner {
+    padding: 30px 0;
+  }
+  .main__kv__inner__left {
+    padding-right: 20px;
+    margin: 60px auto 40px auto;
+  }
+  .main__kv__inner__left__btn {
+    margin-bottom: 140px;
+  }
+}
